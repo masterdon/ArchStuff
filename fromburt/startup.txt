@@ -1,0 +1,32 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/burt/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+orca &
+play -q /usr/share/sounds/freedesktop/stereo/desktop-login.oga > /dev/null 2>&1 
+#caja -n &
+pcmanfm --desktop &
+#spacefm --desktop &
+KBS
+dropboxd &
+/usr/bin/canberra-gtk-play  &
+#/usr/bin/canberra-gtk-play --id="desktop-login" &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/burt/.fluxbox/log"

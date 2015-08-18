@@ -1,0 +1,17 @@
+# gmail configuration
+set imap_user = "donraikes1030@gmail.com"
+set imap_pass = ''
+set smtp_url = "smtp://donraikes1030@smtp.gmail.com:587/”
+set smtp_pass = ''
+set from = "donraikes1030@gmail.com"
+set realname = "Donald Raikes"
+set folder = "imaps://imap.gmail.com:993/inbox"
+set spoolfile = "+INBOX"
+mailboxes = "+INBOX"
+set postponed="+[Gmail]/Drafts"
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+set move = no
+unset record
+
